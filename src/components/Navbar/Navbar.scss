@@ -1,0 +1,8 @@
+.component__navbar {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  &.active {
+    background-color: #1E2833;
+  }
+}

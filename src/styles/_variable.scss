@@ -1,0 +1,270 @@
+$font-family-sans-serif:      "Century Gothic", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+$h7-font-size:                $font-size-base * .88 !default;
+$h8-font-size:                $font-size-base * .75 !default;
+$h9-font-size:                $font-size-base * .62 !default;
+// scss-docs-end font-variables
+
+// scss-docs-start font-sizes
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+) !default;
+// scss-docs-end font-sizes
+
+// $enable-negative-margins: true;
+
+// $gray-150: #F1F3F3 !default;
+// $gray-200: #e9ecef !default;
+// $red:      #FF2424 !default;
+// $green:    #72B742!default;
+
+// $content-width:                 425px;
+// $content-padding-x:             1rem;
+// $content-padding-y:             5rem;
+// $content-padding-yb:            4rem;
+
+// $screen-bg:   #FBFBFB;
+// $body-bg:       $gray-200;
+// $body-color:    #121212 !default;
+
+// // font size
+// $font-size-root: 10px !default;
+// $font-size-base: 1rem !default;
+// $font-size-1: 2.2rem !default;
+// $font-size-2: 2rem !default;
+// $font-size-3: 1.9rem !default;
+// $font-size-4: 1.8rem !default;
+// $font-size-5: 1.7rem !default;
+// $font-size-6: 1.6rem !default;
+// $font-size-7: 1.4rem !default;
+// $font-size-8: 1.3rem !default;
+// $font-size-9: 1.2rem !default;
+// $font-size-10: 1rem !default;
+
+// // font size map
+// $font-sizes: (
+//   1: $font-size-1,
+//   2: $font-size-2,
+//   3: $font-size-3,
+//   4: $font-size-4,
+//   5: $font-size-5,
+//   6: $font-size-6,
+//   7: $font-size-7,
+//   8: $font-size-8,
+//   9: $font-size-9,
+//   10: $font-size-10,
+// );
+
+// $font-weight-lighter: lighter !default;
+// $font-weight-light: 300 !default;
+// $font-weight-normal: 400 !default;
+// $font-weight-bold: 700 !default;
+// $font-weight-bolder: bolder !default;
+
+// $font-weight-base: $font-weight-normal !default;
+
+// $line-height-base: 1.5 !default;
+
+// $content-width: 425px;
+// $content-padding-x: 1.5rem;
+// $content-padding-y: 6rem;
+// $content-padding-yb: 1.5rem;
+
+// // Variables
+
+// // Color system
+
+// $white: #fff !default;
+// $white-two: #f3f3f3 !default;
+// $gray-100: #fbfbfb !default;
+// $gray-150: #f1f3f3 !default;
+// $gray-200: #e9ecef !default;
+// $gray-300: #dfe2e7 !default;
+// $gray-400: #bbc9d4 !default;
+// $gray-500: #707070 !default;
+// $gray-600: #5b6770 !default;
+// $gray-700: #484848 !default;
+// $gray-800: #333333 !default;
+// $gray-900: #212529 !default;
+// $black: #232323 !default;
+// $black-2: #121212 !default;
+
+// $gray: $gray-600 !default;
+// $success: #78d64b !default;
+// $blue: #295eec !default;
+// $cyan: #0e76a8 !default;
+// $cerulean: #0bb5dc !default;
+// $bright-turquoise: #0ecbc6 !default;
+// $dark-blue: #0077b5 !default;
+// $soft-blue: #dcf4ff !default;
+// $red: #882c2f !default;
+// $red-light: #b53a3b !default;
+// $peach: #e86b63 !default;
+// $yellow: #fe9f29 !default;
+// $error: #dc3545 !default;
+
+// $facebook: #385599 !default;
+// $google: #eb2d06 !default;
+// $linkedin: #0077b5 !default;
+// $dark-purple: #385599 !default;
+// $salmon: #ff808d !default;
+
+// // colors-map
+// $colors: (
+//   "blue": $blue,
+//   "gray": $gray,
+//   "red": $red,
+//   "yellow": $yellow,
+// ) !default;
+// // colors-map
+
+// $primary: $success !default;
+// $secondary: $gray !default;
+// $dark: $gray-800 !default;
+// $light: $white !default;
+
+// // theme-colors-map
+// $theme-colors: (
+//   "primary": $primary,
+//   "secondary": $gray-600,
+//   "light": $light,
+//   "dark": $dark,
+//   "warning": $yellow,
+//   "soft-blue": $soft-blue,
+//   "facebook": $facebook,
+//   "google": $google,
+//   "linkedin": $linkedin,
+// ) !default;
+
+// // spaces
+// $space-0: 0 !default;
+// $space-1: 0.5rem !default;
+// $space-2: 1rem !default;
+// $space-3: 1.5rem !default;
+// $space-4: 2rem !default;
+
+// $spaces: (
+//   0: $space-0,
+//   1: $space-1,
+//   2: $space-2,
+//   3: $space-3,
+//   4: $space-4,
+// ) !default;
+
+// // ratio
+// $ration: (
+//   100: 100%,
+//   75: 75%,
+//   50: 50%,
+//   25: 25%,
+// ) !default;
+
+// // text
+// $text-position: (
+//   left: left,
+//   center: center,
+//   right: right,
+//   end: end,
+//   justify: justify,
+// ) !default;
+
+// $min-contrast-ratio: 4.5 !default;
+// $color-contrast-dark: $black !default;
+// $color-contrast-light: $white !default;
+
+// $component-active-bg: $primary !default;
+
+// $body-bg: $gray-200;
+// $body-color: $gray;
+// $screen-bg: $gray-150;
+// $screen-color: $dark;
+
+// // border
+// $border-radius: 0.75rem !default;
+// $border-width: 1px !default;
+// $border-color: $gray-400 !default;
+
+// // button input
+// $input-btn-focus-width: 0.2rem !default;
+// $input-btn-focus-color-opacity: 0.25 !default;
+// $input-btn-focus-color: rgba($component-active-bg, $input-btn-focus-color-opacity) !default;
+// $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+// // button
+// $btn-line-height: $line-height-base !default;
+// $btn-padding-x: 3.2em !default;
+// $btn-padding-y: 1.3rem !default;
+// $btn-font-size: 1.2rem !default;
+// $btn-border-radius: 1.2rem !default;
+// $btn-disabled-opacity: 0.65 !default;
+// $btn-rounded-padding: calc(1em + 0.25em) !default;
+// $btn-border-width: $border-width;
+// $btn-min-width: 3.6rem;
+
+// $btn-focus-box-shadow: $input-btn-focus-box-shadow !default;
+// $btn-focus-bg: transparant !default;
+
+// // input
+// $input-padding-y: 1rem !default;
+// $input-padding-x: 1.5rem !default;
+// $input-font-size: 1.5rem !default;
+// $input-line-height: $line-height-base !default;
+// $input-font-weight: $font-weight-base;
+
+// $input-bg: $white;
+// $input-color: $gray-700 !default;
+// $input-border-color: $border-color !default;
+
+// $input-border-width: $border-width !default;
+// $input-boder-color: $gray;
+// $input-border-radius: $border-radius;
+// $input-border-width: $border-width !default;
+
+// $input-placeholder-color: $gray-500 !default;
+
+// $input-focus-bg: $input-bg !default;
+// $input-focus-border-color: lighten($component-active-bg, 25%) !default;
+// $input-focus-color: $input-color !default;
+// $input-focus-box-shadow: $input-btn-focus-box-shadow;
+
+// $input-disabled-bg: $gray-200 !default;
+// $input-disabled-border-color: null !default;
+
+// $input-rounded-padding: calc(1em + 0.25em);
+
+// // modify global
+// $enable-rounded: true !default;
+// $rounded-pill: 50rem !default;
+
+// // map properties layout
+// $justify-content: (
+//   "start": flex-start,
+//   "end": flex-end,
+//   "center": center,
+//   "between": space-between,
+//   "around": space-around,
+//   "stretch": stretch,
+// ) !default;
+
+// $align-items: (
+//   "start": lex-start,
+//   "end": flex-end,
+//   "center": center,
+//   "stretch": stretch,
+// ) !default;

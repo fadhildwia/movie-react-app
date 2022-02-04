@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("../assets/fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Inter Bold";
+	src: url("../assets/fonts/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "DM Sans Regular";
+	src: url("../assets/fonts/DMSans-Regular.ttf") format("truetype");
+}
+
+
+$themes-fonts : (
+	"roboto" : "Roboto",
+	"inter-bold" : "Inter Bold",
+	"dm-sans-regular" : "DM Sans Regular",
+);
+
+@each $name, $value in $themes-fonts {
+  .font-#{$name} {
+    font-family: $value;
+  }
+}
