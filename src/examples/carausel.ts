@@ -1,0 +1,7 @@
+
+export const EXAMPLE = [
+  { genre: 'Sience ', image: "https://via.placeholder.com/300/FF0000/FFFFFF", rating: 3.5, title: 'Godzilla vs. Kong', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus excepturi doloremque laboriosam, aut quos minus necessitatibus, eius voluptatum mollitia perspiciatis iure ducimus quidem itaque! Incidunt!' },
+  { genre: 'Sience Fiction', image: "https://unsplash.it/800/500?image=580", rating: 3.5, title: 'Godzilla', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus excepturi doloremque laboriosam, aut quos minus necessitatibus, eius voluptatum mollitia perspiciatis iure ducimus quidem itaque! Incidunt!' },
+  { genre: 'Siencen', image: "https://via.placeholder.com/300/FF0000/FFFFFF", rating: 2.5, title: 'Godzilla vs. Kong', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus excepturi doloremque laboriosam, aut quos minus necessitatibus, eius voluptatum mollitia perspiciatis iure ducimus quidem itaque! Incidunt!' },
+  { genre: 'Sience Fiction', image: "https://unsplash.it/800/500?image=580", rating: 1.5, title: 'Godzilla', desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus excepturi doloremque laboriosam, aut quos minus necessitatibus, eius voluptatum mollitia perspiciatis iure ducimus quidem itaque! Incidunt!' },
+]
