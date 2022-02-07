@@ -1,0 +1,16 @@
+.component__card {
+  height: 250px;
+  width: 170px;
+  background-size: cover;
+  .card{
+    &-overlay {
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    &-genre {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px 0 10px 0;
+    }
+  }
+}
