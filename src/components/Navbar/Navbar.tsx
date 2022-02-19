@@ -35,7 +35,7 @@ const Navbar: React.FC<Props> = ({
         <div className="container">
           <div className="row align-items-center" style={{ height: "60px" }}>
             <div className="col-3 col-sm-auto">
-              <a onClick={onHome} className='text-white fs-3 btn'>Movie</a>
+              <a onClick={onHome} className='text-white fs-3 btn'>React Movie</a>
             </div>
             <div className="col-6 col-sm-auto ms-auto position-relative">
               <input type="text" onChange={onSearch} className='form-control transparent-input text-white rounded-pill bg-transparent' />
