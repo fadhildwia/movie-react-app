@@ -8,12 +8,14 @@ type Props = {
   onHome?: (e: any) => void
   onProfile?: (e: any) => void
   onSearch?: (e: any) => void
+  className?: string
 }
 
 const Navbar: React.FC<Props> = ({
   onHome,
   onProfile,
-  onSearch
+  onSearch,
+  className
 }) => {
   const [navbar, setNavbar] = useState<boolean>(false)
 
@@ -29,7 +31,7 @@ const Navbar: React.FC<Props> = ({
 
   return (
     <>
-      <nav className={`component__navbar font-inter-bold ${navbar ? 'active' : ''}`}>
+      <nav className={`component__navbar font-inter-bold ${navbar ? 'active' : ''} ${className}`}>
         <div className="container">
           <div className="row align-items-center" style={{ height: "60px" }}>
             <div className="col-3 col-sm-auto">

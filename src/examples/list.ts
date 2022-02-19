@@ -27,3 +27,19 @@ export const LIST = [
     ]
   },
 ]
+
+export const CAST = [
+  {
+    title: 'Top Billed Cast',
+    list: [
+      { name: 'Galgadot', film: 'Wonder Woman' },
+      { name: 'Galgadot', film: 'Wonder Woman' },
+      { name: 'Galgadot', film: 'Wonder Woman' },
+      { name: 'Galgadot', film: 'Wonder Woman' },
+      { name: 'Galgadot', film: 'Wonder Woman' },
+      { name: 'Galgadot', film: 'Wonder Woman' },
+      { name: 'Galgadot', film: 'Wonder Woman' },
+      { name: 'Galgadot', film: 'Wonder Woman' },
+    ]
+  }
+]

@@ -1,12 +1,16 @@
-import React from 'react';
-import Home from './views/Home/Home'
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Detail, Home } from 'views';
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+  <BrowserRouter>
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/detail' component={Detail} />
+    </Switch>
+  </BrowserRouter>
   );
 }
 
-export default App;
+export default App
