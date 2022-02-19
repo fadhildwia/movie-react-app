@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import images from 'assets/images'
 import { Star } from 'components'
 import React, { useState } from 'react'

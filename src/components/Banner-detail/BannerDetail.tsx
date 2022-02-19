@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import images from 'assets/images'
 import { Star } from 'components'
 import React from 'react'
