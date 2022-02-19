@@ -1,5 +1,4 @@
 import images from 'assets/images'
-import { Star } from 'components'
 import React from 'react'
 import './Card.scss'
 
