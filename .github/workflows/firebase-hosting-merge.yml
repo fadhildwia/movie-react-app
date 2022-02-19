@@ -20,5 +20,5 @@ jobs:
           projectId: react-movie-app-1f6e0
       - uses: cardinalby/export-env-action@v1
         with:
-          envFile: '.env'    
+          envFile: '../../.env'    
           expand: 'true'
