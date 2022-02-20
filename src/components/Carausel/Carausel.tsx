@@ -26,13 +26,13 @@ const Carausel: React.FC<Props> = ({ data }) => {
   return (
     <div className="component__carousel d-flex align-items-center position-relative">
       {data.map((item, index) => <>
-          <div className='carousel position-absolute' key={index} data-active={index === indexActive} style={{ backgroundImage: `url(${item.image})` }}></div>
+          <div className='carousel position-absolute' key={index} data-active={index === indexActive} style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w500/${item.poster_path})` }}></div>
           <div className="carousel-text row position-absolute w-50 ms-5 text-white g-3" style={{ opacity: `${index === indexActive ? '1' : '0'}`}}>
             <div className='border-genre w-auto' style={{ color: "#0FEFFD"}}>{item.genre}</div>
             <div>
               <Star width={35} height={35} spacing={5} value={item.rating} />
             </div>
-            <div className='fs-1 fw-bolder'>{item.title}</div>
+            <div className='fs-1 fw-bolder'>{item.original_title}</div>
             <div>{item.desc}</div>
           </div>
         </>

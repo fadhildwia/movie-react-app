@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'styles/index.scss';
+import { AppProvider } from 'hooks/context';
+
+const { PUBLIC_URL } = process.env
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppProvider>
+      <App basename={PUBLIC_URL} />
+    </AppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

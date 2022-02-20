@@ -12,4 +12,4 @@ const Detail: React.FC = () => {
   )
 }
 
-export { Detail }
+export default Detail
