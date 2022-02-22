@@ -26,14 +26,15 @@ const Carausel: React.FC<Props> = ({ data }) => {
   return (
     <div className="component__carousel d-flex align-items-center position-relative">
       {data.map((item, index) => <>
-          <div className='carousel position-absolute' key={index} data-active={index === indexActive} style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w500/${item.poster_path})` }}></div>
+          <div className='carousel position-absolute' key={index} data-active={index === indexActive} style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w500/${item.backdrop_path})` }}></div>
           <div className="carousel-text row position-absolute w-50 ms-5 text-white g-3" style={{ opacity: `${index === indexActive ? '1' : '0'}`}}>
             <div className='border-genre w-auto' style={{ color: "#0FEFFD"}}>{item.genre}</div>
-            <div>
-              <Star width={35} height={35} spacing={5} value={item.rating} />
+            <div className='d-flex just'>
+              <Star width={35} height={35} spacing={5} value={item.vote_average / 2} />
+              <div className='ms-4 fw-bold fs-4 mt-1'>{item.vote_average}</div>
             </div>
             <div className='fs-1 fw-bolder'>{item.original_title}</div>
-            <div>{item.desc}</div>
+            <div>{item.overview}</div>
           </div>
         </>
       )}
@@ -43,7 +44,7 @@ const Carausel: React.FC<Props> = ({ data }) => {
       <div onClick={handleNext} className='d-flex align-items-center position-absolute end-0 arrow-right'>
         <img src={images.ic_arrow} className="rotate-180" />
       </div>
-      <div className='d-flex end-50 position-absolute bottom-0 mb-5 gap-3'>
+      <div className='d-flex position-absolute bottom-0 mb-5 gap-3' style={{ transform: 'translate(-50%, -50%)', left: '50%' }}>
         {data.map((item, index) => 
           <div key={index} onClick={() => setIndexActive(index)} className={`dot ${index === indexActive ? 'active' : ''}`}></div>
         )}

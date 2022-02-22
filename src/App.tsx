@@ -39,7 +39,7 @@ const App: React.FC<Props> = ({ basename }) => {
       <BrowserRouter basename={basename}>
         <Switch>
           <PublicRoute exact path='/' component={HomePage} />
-          <PublicRoute exact path='/detail' component={DetailPage} />
+          <PublicRoute exact path='/detail/:type/:id' component={DetailPage} />
         </Switch>
       </BrowserRouter>
     </Suspense>
