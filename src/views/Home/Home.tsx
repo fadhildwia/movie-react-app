@@ -17,13 +17,22 @@ const MOVIE_SELECT = [
   { value: '/movie/upcoming', name: 'Upcoming' }
 ]
 
+const TV_SELECT = [
+  { value: '/tv/popular', name: 'Popular' },
+  { value: '/tv/airing_today', name: 'Airing Today' },
+  { value: '/tv/on_the_air', name: 'On The Air' },
+  { value: '/tv/top_rated', name: 'Top Rated' }
+]
+
 const Home: React.FC = () => {
   const history = useHistory()
   const [listPopular, getListPopular] = useGet()
   const [listMovie, getListMovie] = useGet()
+  const [listTv, getListTv] = useGet()
 
   const [params, setParams] = useState<Filter>({ api_key: '03aedb9aa307e36112be8e8b6d70ed4a', language: 'en-US' })
   const [movieSelect, setMovieSelect] = useState<string>('/movie/now_playing')
+  const [tvSelect, setTvSelect] = useState<string>('/tv/popular')
 
   useEffect(() => {
     getListPopular.getRequest(URL.MOVIE_POPULAR, params, {})
@@ -33,9 +42,19 @@ const Home: React.FC = () => {
     getListMovie.getRequest(movieSelect, {...params, page: 1}, {})
   }, [movieSelect])
 
+  useEffect(() => {
+    getListTv.getRequest(tvSelect, {...params, page: 1}, {})
+  }, [tvSelect])
+
   const handleSelect = (e: any, type: string) => {
     const { value } = e.target 
-    setMovieSelect(value)
+
+    switch (type) {
+      case 'tv':
+        return setTvSelect(value)
+      default:
+        return setMovieSelect(value)
+    }
   }
 
   const handleClickWatch = (id: any, type: string) => {
@@ -49,6 +68,7 @@ const Home: React.FC = () => {
           <Navbar />
           <Carausel data={listPopular.data.results} />
           <List title={'Whats Popular'} data={MOVIE_SELECT} list={listMovie?.data?.results} onSelect={(e) => handleSelect(e, 'movie')} onWatch={(id) => handleClickWatch(id, 'movie')} />
+          <List title={'TV'} data={TV_SELECT} list={listTv?.data?.results} onSelect={(e) => handleSelect(e, 'tv')} onWatch={(id) => handleClickWatch(id, 'tv')} />
         </div>
       }
     </>
